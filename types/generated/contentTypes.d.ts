@@ -379,9 +379,9 @@ export interface ApiPredictPredict extends Schema.CollectionType {
         minLength: 10;
         maxLength: 150;
       }>;
-    mbit: Attribute.String;
     mbti_label: Attribute.Integer;
     mbti_image: Attribute.Media;
+    mbti: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

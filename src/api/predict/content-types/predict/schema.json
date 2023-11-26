@@ -17,9 +17,6 @@
       "maxLength": 150,
       "minLength": 10
     },
-    "mbit": {
-      "type": "string"
-    },
     "mbti_label": {
       "type": "integer"
     },
@@ -30,6 +27,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "mbti": {
+      "type": "string"
     }
   }
 }
