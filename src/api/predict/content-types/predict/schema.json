@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "predicts",
+  "info": {
+    "singularName": "predict",
+    "pluralName": "predicts",
+    "displayName": "Predict",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "maxLength": 150,
+      "minLength": 10
+    },
+    "mbit": {
+      "type": "string"
+    },
+    "mbti_label": {
+      "type": "integer"
+    },
+    "mbti_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
