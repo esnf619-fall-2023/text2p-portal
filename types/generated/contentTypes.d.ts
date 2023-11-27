@@ -376,12 +376,11 @@ export interface ApiPredictPredict extends Schema.CollectionType {
   attributes: {
     text: Attribute.Text &
       Attribute.SetMinMaxLength<{
-        minLength: 10;
-        maxLength: 150;
+        minLength: 100;
       }>;
     mbti_label: Attribute.Integer;
-    mbti_image: Attribute.Media;
     mbti: Attribute.String;
+    json_description: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

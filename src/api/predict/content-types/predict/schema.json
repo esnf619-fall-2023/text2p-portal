@@ -14,22 +14,16 @@
   "attributes": {
     "text": {
       "type": "text",
-      "maxLength": 150,
-      "minLength": 10
+      "minLength": 100
     },
     "mbti_label": {
       "type": "integer"
     },
-    "mbti_image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "mbti": {
       "type": "string"
+    },
+    "json_description": {
+      "type": "blocks"
     }
   }
 }
