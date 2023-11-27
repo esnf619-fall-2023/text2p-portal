@@ -24,6 +24,9 @@
     },
     "json_description": {
       "type": "blocks"
+    },
+    "description_md": {
+      "type": "richtext"
     }
   }
 }
