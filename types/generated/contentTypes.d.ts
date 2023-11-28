@@ -381,7 +381,6 @@ export interface ApiPredictPredict extends Schema.CollectionType {
     mbti_label: Attribute.Integer;
     mbti: Attribute.String;
     json_description: Attribute.Blocks;
-    description_md: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
