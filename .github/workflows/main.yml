@@ -25,4 +25,16 @@ jobs:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}
-        source: ".
+        source: "."
+        target: "/path/to/your/strapi/directory/on/server"
+
+    - name: SSH commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        password: ${{ secrets.SERVER_PASSWORD }}
+        script: |
+          cd /path/to/your/strapi/directory/on/server
+          npm install --production  # or yarn install --production
+          pm2 restart all  # or any other process manager you're using
