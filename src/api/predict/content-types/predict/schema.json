@@ -14,7 +14,7 @@
   "attributes": {
     "text": {
       "type": "text",
-      "minLength": 100
+      "minLength": 20
     },
     "mbti_label": {
       "type": "integer"
@@ -24,6 +24,10 @@
     },
     "json_description": {
       "type": "blocks"
+    },
+    "isApproved": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
