@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+  rateLimit: { enabled: false },	
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
